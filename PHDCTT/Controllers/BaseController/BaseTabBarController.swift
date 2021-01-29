@@ -62,12 +62,10 @@ class BaseTabBarController: UITabBarController {
             }else{
                 vc = UIStoryboard.init(name: "me", bundle: nil).instantiateViewController(withIdentifier: "me_stroryboar_identity")
             }
-            
-            
             let barItem = UITabBarItem (title: itemTitleArr[i], image: UIImage (named: icon_normal[i])?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage (named: icon_selected[i])?.withRenderingMode(.alwaysOriginal))
             barItem.tag = i
             if i == 2 {
-                barItem.imageInsets = UIEdgeInsets.init(top: 5, left: 0, bottom: -5, right: 0)
+                barItem.imageInsets = UIEdgeInsets.init(top: -10, left: 0, bottom: 0, right: 0)
             }
             
             barItem.setTitleTextAttributes(convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor):UIColor.black]), for: .selected)

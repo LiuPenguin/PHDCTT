@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3747471B25AD761E004A8F33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3747471A25AD761E004A8F33 /* AppDelegate.swift */; };
-		3747471F25AD761E004A8F33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3747471E25AD761E004A8F33 /* ViewController.swift */; };
 		3747472225AD761E004A8F33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3747472025AD761E004A8F33 /* Main.storyboard */; };
 		3747472425AD7620004A8F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3747472325AD7620004A8F33 /* Assets.xcassets */; };
 		3747472725AD7620004A8F33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3747472525AD7620004A8F33 /* LaunchScreen.storyboard */; };
@@ -49,7 +48,6 @@
 		28FBDF0AB819E507DA7CB23C /* Pods_PHDCTT_PHDCTTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PHDCTT_PHDCTTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3747471725AD761E004A8F33 /* PHDCTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHDCTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3747471A25AD761E004A8F33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3747471E25AD761E004A8F33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3747472125AD761E004A8F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3747472325AD7620004A8F33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3747472625AD7620004A8F33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,12 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				3747476425AD79A9004A8F33 /* Controllers */,
-				3747471A25AD761E004A8F33 /* AppDelegate.swift */,
-				3747471E25AD761E004A8F33 /* ViewController.swift */,
-				3747472025AD761E004A8F33 /* Main.storyboard */,
-				3747472325AD7620004A8F33 /* Assets.xcassets */,
-				3747472525AD7620004A8F33 /* LaunchScreen.storyboard */,
-				3747472825AD7620004A8F33 /* Info.plist */,
+				3769416125C3EFF60082A780 /* Com */,
+				3769416225C3EFF60082A780 /* Src */,
 			);
 			path = PHDCTT;
 			sourceTree = "<group>";
@@ -175,10 +169,10 @@
 		3747476425AD79A9004A8F33 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3769415F25C3EFA60082A780 /* Login */,
+				3769415D25C3EF8B0082A780 /* Publish */,
 				3747477B25AD7DBD004A8F33 /* Home */,
-				3747477325AD7DBD004A8F33 /* Login */,
 				3747477725AD7DBD004A8F33 /* Me */,
-				3747477925AD7DBD004A8F33 /* Publish */,
 				3747477525AD7DBD004A8F33 /* Servers */,
 				3747477D25AD7DBD004A8F33 /* ZT */,
 				3747476D25AD7C20004A8F33 /* BaseController */,
@@ -194,21 +188,6 @@
 				374747A825AD81AA004A8F33 /* BaseNavigationController.swift */,
 			);
 			path = BaseController;
-			sourceTree = "<group>";
-		};
-		3747477325AD7DBD004A8F33 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				3747477425AD7DBD004A8F33 /* View */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		3747477425AD7DBD004A8F33 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		3747477525AD7DBD004A8F33 /* Servers */ = {
@@ -230,49 +209,20 @@
 		3747477725AD7DBD004A8F33 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				3769415C25C3EF6D0082A780 /* View */,
 				374747A325AD8068004A8F33 /* me.storyboard */,
-				3747477825AD7DBD004A8F33 /* View */,
 				3747479125AD7E87004A8F33 /* MeViewController.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
 		};
-		3747477825AD7DBD004A8F33 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		3747477925AD7DBD004A8F33 /* Publish */ = {
-			isa = PBXGroup;
-			children = (
-				3747477A25AD7DBD004A8F33 /* View */,
-			);
-			path = Publish;
-			sourceTree = "<group>";
-		};
-		3747477A25AD7DBD004A8F33 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		3747477B25AD7DBD004A8F33 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3747477C25AD7DBD004A8F33 /* View */,
+				3769415B25C3EF510082A780 /* View */,
 				3747477F25AD7E11004A8F33 /* HomeViewController.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		3747477C25AD7DBD004A8F33 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		3747477D25AD7DBD004A8F33 /* ZT */ = {
@@ -289,6 +239,69 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3769415B25C3EF510082A780 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3769415C25C3EF6D0082A780 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3769415D25C3EF8B0082A780 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				3769415E25C3EF8B0082A780 /* View */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		3769415E25C3EF8B0082A780 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3769415F25C3EFA60082A780 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3769416025C3EFA60082A780 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3769416025C3EFA60082A780 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3769416125C3EFF60082A780 /* Com */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Com;
+			sourceTree = "<group>";
+		};
+		3769416225C3EFF60082A780 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				3747471A25AD761E004A8F33 /* AppDelegate.swift */,
+				3747472025AD761E004A8F33 /* Main.storyboard */,
+				3747472325AD7620004A8F33 /* Assets.xcassets */,
+				3747472525AD7620004A8F33 /* LaunchScreen.storyboard */,
+				3747472825AD7620004A8F33 /* Info.plist */,
+			);
+			path = Src;
 			sourceTree = "<group>";
 		};
 		6547A59203281660DA8A9657 /* Frameworks */ = {
@@ -544,7 +557,6 @@
 				3747478825AD7E48004A8F33 /* FriendRootController.swift in Sources */,
 				3747479325AD7E87004A8F33 /* MeViewController.swift in Sources */,
 				3747478D25AD7E67004A8F33 /* AllViewController.swift in Sources */,
-				3747471F25AD761E004A8F33 /* ViewController.swift in Sources */,
 				374747A925AD81AA004A8F33 /* BaseNavigationController.swift in Sources */,
 				3747476F25AD7C33004A8F33 /* BaseViewController.swift in Sources */,
 				3747471B25AD761E004A8F33 /* AppDelegate.swift in Sources */,
@@ -654,7 +666,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -709,7 +721,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -726,12 +738,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PHDCTT/Info.plist;
+				DEVELOPMENT_TEAM = 5AV2RGU278;
+				INFOPLIST_FILE = PHDCTT/Src/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sfsfdsfsfds.PHDCTT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.penguin.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -745,12 +758,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PHDCTT/Info.plist;
+				DEVELOPMENT_TEAM = 5AV2RGU278;
+				INFOPLIST_FILE = PHDCTT/Src/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sfsfdsfsfds.PHDCTT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.penguin.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
