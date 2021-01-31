@@ -4,7 +4,6 @@
 target 'PHDCTT' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  
   pod 'Alamofire', '~> 5.0.0'
   pod 'SwiftyJSON','~> 5.0'
   pod 'SVProgressHUD', '~> 2.1.2'
